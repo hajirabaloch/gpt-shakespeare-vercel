@@ -1,0 +1,8 @@
+{
+  "source": "https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt",
+  "characters": 1115394,
+  "vocab_size": 65,
+  "train_tokens": 1003854,
+  "val_tokens": 111540,
+  "split": "90/10"
+}

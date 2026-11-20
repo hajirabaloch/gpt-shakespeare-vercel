@@ -1,0 +1,275 @@
+{
+ "format": "float32-le",
+ "layout": "row-major; Linear.weight is [out, in]",
+ "config": {
+  "vocab_size": 65,
+  "block_size": 128,
+  "n_embd": 128,
+  "n_head": 4,
+  "n_layer": 2,
+  "ff_dim": 512,
+  "dropout": 0.1
+ },
+ "metadata": {
+  "best_step": 5000,
+  "train_loss": 1.3088706731796265,
+  "val_loss": 1.5360084772109985,
+  "total_parameters": 429889,
+  "seed": 1337,
+  "dataset": "Tiny Shakespeare (character-level)",
+  "context_length": 128
+ },
+ "tensors": [
+  {
+   "name": "tok_emb.weight",
+   "shape": [
+    65,
+    128
+   ],
+   "offset": 0,
+   "length": 8320
+  },
+  {
+   "name": "pos_emb.weight",
+   "shape": [
+    128,
+    128
+   ],
+   "offset": 8320,
+   "length": 16384
+  },
+  {
+   "name": "blocks.0.ln1.weight",
+   "shape": [
+    128
+   ],
+   "offset": 24704,
+   "length": 128
+  },
+  {
+   "name": "blocks.0.ln1.bias",
+   "shape": [
+    128
+   ],
+   "offset": 24832,
+   "length": 128
+  },
+  {
+   "name": "blocks.0.attn.qkv.weight",
+   "shape": [
+    384,
+    128
+   ],
+   "offset": 24960,
+   "length": 49152
+  },
+  {
+   "name": "blocks.0.attn.qkv.bias",
+   "shape": [
+    384
+   ],
+   "offset": 74112,
+   "length": 384
+  },
+  {
+   "name": "blocks.0.attn.proj.weight",
+   "shape": [
+    128,
+    128
+   ],
+   "offset": 74496,
+   "length": 16384
+  },
+  {
+   "name": "blocks.0.attn.proj.bias",
+   "shape": [
+    128
+   ],
+   "offset": 90880,
+   "length": 128
+  },
+  {
+   "name": "blocks.0.ln2.weight",
+   "shape": [
+    128
+   ],
+   "offset": 91008,
+   "length": 128
+  },
+  {
+   "name": "blocks.0.ln2.bias",
+   "shape": [
+    128
+   ],
+   "offset": 91136,
+   "length": 128
+  },
+  {
+   "name": "blocks.0.ff.0.weight",
+   "shape": [
+    512,
+    128
+   ],
+   "offset": 91264,
+   "length": 65536
+  },
+  {
+   "name": "blocks.0.ff.0.bias",
+   "shape": [
+    512
+   ],
+   "offset": 156800,
+   "length": 512
+  },
+  {
+   "name": "blocks.0.ff.2.weight",
+   "shape": [
+    128,
+    512
+   ],
+   "offset": 157312,
+   "length": 65536
+  },
+  {
+   "name": "blocks.0.ff.2.bias",
+   "shape": [
+    128
+   ],
+   "offset": 222848,
+   "length": 128
+  },
+  {
+   "name": "blocks.1.ln1.weight",
+   "shape": [
+    128
+   ],
+   "offset": 222976,
+   "length": 128
+  },
+  {
+   "name": "blocks.1.ln1.bias",
+   "shape": [
+    128
+   ],
+   "offset": 223104,
+   "length": 128
+  },
+  {
+   "name": "blocks.1.attn.qkv.weight",
+   "shape": [
+    384,
+    128
+   ],
+   "offset": 223232,
+   "length": 49152
+  },
+  {
+   "name": "blocks.1.attn.qkv.bias",
+   "shape": [
+    384
+   ],
+   "offset": 272384,
+   "length": 384
+  },
+  {
+   "name": "blocks.1.attn.proj.weight",
+   "shape": [
+    128,
+    128
+   ],
+   "offset": 272768,
+   "length": 16384
+  },
+  {
+   "name": "blocks.1.attn.proj.bias",
+   "shape": [
+    128
+   ],
+   "offset": 289152,
+   "length": 128
+  },
+  {
+   "name": "blocks.1.ln2.weight",
+   "shape": [
+    128
+   ],
+   "offset": 289280,
+   "length": 128
+  },
+  {
+   "name": "blocks.1.ln2.bias",
+   "shape": [
+    128
+   ],
+   "offset": 289408,
+   "length": 128
+  },
+  {
+   "name": "blocks.1.ff.0.weight",
+   "shape": [
+    512,
+    128
+   ],
+   "offset": 289536,
+   "length": 65536
+  },
+  {
+   "name": "blocks.1.ff.0.bias",
+   "shape": [
+    512
+   ],
+   "offset": 355072,
+   "length": 512
+  },
+  {
+   "name": "blocks.1.ff.2.weight",
+   "shape": [
+    128,
+    512
+   ],
+   "offset": 355584,
+   "length": 65536
+  },
+  {
+   "name": "blocks.1.ff.2.bias",
+   "shape": [
+    128
+   ],
+   "offset": 421120,
+   "length": 128
+  },
+  {
+   "name": "ln_f.weight",
+   "shape": [
+    128
+   ],
+   "offset": 421248,
+   "length": 128
+  },
+  {
+   "name": "ln_f.bias",
+   "shape": [
+    128
+   ],
+   "offset": 421376,
+   "length": 128
+  },
+  {
+   "name": "lm_head.weight",
+   "shape": [
+    65,
+    128
+   ],
+   "offset": 421504,
+   "length": 8320
+  },
+  {
+   "name": "lm_head.bias",
+   "shape": [
+    65
+   ],
+   "offset": 429824,
+   "length": 65
+  }
+ ]
+}

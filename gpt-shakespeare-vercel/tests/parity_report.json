@@ -1,0 +1,56 @@
+{
+  "cases": [
+    {
+      "name": "prompt: ROMEO:",
+      "length": 6,
+      "pyArgmax": 0,
+      "jsArgmax": 0,
+      "maxLogitErr": 0.00000286102294921875,
+      "maxProbErr": 1.0869513589195634e-7
+    },
+    {
+      "name": "prompt: To be, or not to be",
+      "length": 19,
+      "pyArgmax": 1,
+      "jsArgmax": 1,
+      "maxLogitErr": 0.000003814697265625,
+      "maxProbErr": 8.684594177132965e-8
+    },
+    {
+      "name": "single newline",
+      "length": 1,
+      "pyArgmax": 0,
+      "jsArgmax": 0,
+      "maxLogitErr": 0.0000019073486328125,
+      "maxProbErr": 3.4570515949905456e-8
+    },
+    {
+      "name": "single token 'A'",
+      "length": 1,
+      "pyArgmax": 52,
+      "jsArgmax": 52,
+      "maxLogitErr": 5.960464477539062e-7,
+      "maxProbErr": 6.388620890640517e-8
+    },
+    {
+      "name": "full 128-token validation window",
+      "length": 128,
+      "pyArgmax": 39,
+      "jsArgmax": 39,
+      "maxLogitErr": 0.00000286102294921875,
+      "maxProbErr": 1.2144744897246706e-7
+    },
+    {
+      "name": "random 64 tokens",
+      "length": 64,
+      "pyArgmax": 37,
+      "jsArgmax": 37,
+      "maxLogitErr": 0.0000095367431640625,
+      "maxProbErr": 0.0000014750379496719646
+    }
+  ],
+  "maxAbsLogitError": 0.0000095367431640625,
+  "maxAbsProbError": 0.0000014750379496719646,
+  "argmaxAllMatch": true,
+  "pass": true
+}
